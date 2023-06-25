@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ -z "$TMUX" ]]; then
-	tmux attach-session -t $(tmux list-sessions | sed -E 's/:.*$//' | fzf --reverse)
+	tmux attach-session -t $(tmux list-sessions | sed -E 's/:.*$//' | fzf --reverse --prompt='Session: ')
 else
 	tmux list-sessions | sed -E 's/:.*$//' | fzf --reverse --prompt='Session: ' | xargs tmux switch-client -t
 fi

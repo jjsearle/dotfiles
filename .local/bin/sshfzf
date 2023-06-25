@@ -1,7 +1,7 @@
 #!/bin/bash
 SSHCONFIGPATH=$HOME/.ssh/config.d/
 
-SELECTED=$(find $SSHCONFIGPATH -type f -exec sed -rn 's/^\s*Host\s+(.*)\s*/\1/ip' {} \; | cut -f1 -d' ' | fzf)
+SELECTED=$(find $SSHCONFIGPATH -type f -exec sed -rn 's/^\s*Host\s+(.*)\s*/\1/ip' {} \; | cut -f1 -d' ' | fzf --reverse --prompt="Host: ")
 
 if [ -n "${SELECTED}" ]; then
 	ssh $SELECTED "$@"
