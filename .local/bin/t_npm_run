@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SCRIPT=$(cat package.json | jq -r '.scripts|to_entries[].key' | fzf)
+tmux split-window
+tmux send "npm run $SCRIPT" ENTER
