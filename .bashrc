@@ -30,21 +30,3 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-alias vim=nvim
-alias t="tmux"
-alias ta="t a -t"
-alias tls="t ls"
-alias config="/usr/bin/git --git-dir=/var/home/joe/.dotfiles/ --work-tree=/var/home/joe"
-alias g="git"
-alias ga="git add"
-alias gb="git branch"
-alias gco="git checkout"
-alias gcp="git cherry-pick"
-alias gd="git diff"
-alias gf="git fetch"
-alias gl="git log"
-alias gpull="git pull"
-alias gp="git push"
-alias gr="git reset"
-alias gs="git status"
