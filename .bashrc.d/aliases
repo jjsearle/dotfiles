@@ -1,8 +1,8 @@
 alias c=clear
 alias vim=nvim
-alias t="tmux"
-alias ta="t a -t"
-alias tls="t ls"
+#alias t="tmux"
+#alias ta="t a -t"
+#alias tls="t ls"
 alias config="/usr/bin/git --git-dir=/var/home/joe/.dotfiles/ --work-tree=/var/home/joe"
 alias g="git"
 alias ga="git add"
