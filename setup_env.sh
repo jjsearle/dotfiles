@@ -15,8 +15,8 @@ else
 fi
 
 # Define package lists per distro
-DEBIAN_PACKAGES=(git make gcc unzip neovim fd-find zoxide ripgrep fzf)
-RHEL_PACKAGES=(git make gcc unzip neovim fd-find zoxide ripgrep fzf)
+DEBIAN_PACKAGES=(git make gcc unzip fd-find zoxide ripgrep fzf)
+RHEL_PACKAGES=(git make gcc unzip fd-find zoxide ripgrep fzf)
 
 echo "Detected distribution: $ID"
 
@@ -34,3 +34,6 @@ case "$ID" in
         exit 2
         ;;
 esac
+
+curl -sL https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz \
+| sudo tar -xzf - --strip-components=1 --overwrite -C /usr
