@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir -p $HOME/.config
-ln -s $PWD/dotfiles/.config/nvim .config/nvim
+ln -s $PWD/dotfiles/.config/nvim/ .config/nvim
 ln -s $PWD/dotfiles/.bashrc $HOME/.bashrc
 ln -s $PWD/dotfiles/.bashrc.d/ $HOME/.bashrc.d
 ln -s $PWD/dotfiles/.tmux.conf $HOME/.tmux.conf
