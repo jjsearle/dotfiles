@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 mkdir -p $HOME/.config
-ln -s dotfiles/.config/nvim .config/nvim
-ln -s dotfiles/.bashrc $HOME/.bashrc
-ln -s dotfiles/.bashrc.d/ $HOME/.bashrc.d
-ln -s dotfiles/.tmux.conf $HOME/.tmux.conf
+ln -s $PWD/dotfiles/.config/nvim .config/nvim
+ln -s $PWD/dotfiles/.bashrc $HOME/.bashrc
+ln -s $PWD/dotfiles/.bashrc.d/ $HOME/.bashrc.d
+ln -s $PWD/dotfiles/.tmux.conf $HOME/.tmux.conf
 
 # Load OS information
 if [ -f /etc/os-release ]; then
