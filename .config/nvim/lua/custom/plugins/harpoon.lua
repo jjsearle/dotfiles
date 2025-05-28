@@ -14,16 +14,16 @@ return {
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end)
 
-    vim.keymap.set('n', '<leader>1', function()
+    vim.keymap.set('n', '<leader>h1', function()
       harpoon:list():select(1)
     end)
-    vim.keymap.set('n', '<leader>2', function()
+    vim.keymap.set('n', '<leader>h2', function()
       harpoon:list():select(2)
     end)
-    vim.keymap.set('n', '<leader>3', function()
+    vim.keymap.set('n', '<leader>h3', function()
       harpoon:list():select(3)
     end)
-    vim.keymap.set('n', '<leader>4', function()
+    vim.keymap.set('n', '<leader>h4', function()
       harpoon:list():select(4)
     end)
 
@@ -40,10 +40,10 @@ return {
       { '<leader>ha', desc = '[A]dd', mode = 'n' },
       { '<leader>hn', desc = '[N]ext', mode = 'n' },
       { '<leader>hp', desc = '[P]revious', mode = 'n' },
-      { '<leader>1', desc = 'Harpoon 1', mode = 'n' },
-      { '<leader>2', desc = 'Harpoon 2', mode = 'n' },
-      { '<leader>3', desc = 'Harpoon 3', mode = 'n' },
-      { '<leader>4', desc = 'Harpoon 4', mode = 'n' },
+      { '<leader>h1', desc = 'Jump to [1]', mode = 'n' },
+      { '<leader>h2', desc = 'Jump to [2]', mode = 'n' },
+      { '<leader>h3', desc = 'Jump to [3]', mode = 'n' },
+      { '<leader>h4', desc = 'Jump to [4]', mode = 'n' },
     }
   end,
 }
