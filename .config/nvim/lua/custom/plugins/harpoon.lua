@@ -7,23 +7,23 @@ return {
     local wk = require 'which-key'
     harpoon:setup()
 
-    vim.keymap.set('n', '<leader>ha', function()
+    vim.keymap.set('n', '<leader>fa', function()
       harpoon:list():add()
     end)
-    vim.keymap.set('n', '<leader>hh', function()
+    vim.keymap.set('n', '<leader>ff', function()
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end)
 
-    vim.keymap.set('n', '<leader>h1', function()
+    vim.keymap.set('n', '<leader>f1', function()
       harpoon:list():select(1)
     end)
-    vim.keymap.set('n', '<leader>h2', function()
+    vim.keymap.set('n', '<leader>f2', function()
       harpoon:list():select(2)
     end)
-    vim.keymap.set('n', '<leader>h3', function()
+    vim.keymap.set('n', '<leader>f3', function()
       harpoon:list():select(3)
     end)
-    vim.keymap.set('n', '<leader>h4', function()
+    vim.keymap.set('n', '<leader>f4', function()
       harpoon:list():select(4)
     end)
 
@@ -35,15 +35,14 @@ return {
       harpoon:list():next()
     end)
     wk.add {
-      { '<leader>h', desc = '[H]arpoon', mode = 'n' },
-      { '<leader>hh', desc = 'Quick Menu', mode = 'n' },
-      { '<leader>ha', desc = '[A]dd', mode = 'n' },
-      { '<leader>hn', desc = '[N]ext', mode = 'n' },
-      { '<leader>hp', desc = '[P]revious', mode = 'n' },
-      { '<leader>h1', desc = 'Jump to [1]', mode = 'n' },
-      { '<leader>h2', desc = 'Jump to [2]', mode = 'n' },
-      { '<leader>h3', desc = 'Jump to [3]', mode = 'n' },
-      { '<leader>h4', desc = 'Jump to [4]', mode = 'n' },
+      { '<leader>ff', desc = 'Quick Menu', mode = 'n' },
+      { '<leader>fa', desc = '[A]dd', mode = 'n' },
+      { '<leader>fn', desc = '[N]ext', mode = 'n' },
+      { '<leader>fp', desc = '[P]revious', mode = 'n' },
+      { '<leader>f1', desc = 'Jump to [1]', mode = 'n' },
+      { '<leader>f2', desc = 'Jump to [2]', mode = 'n' },
+      { '<leader>f3', desc = 'Jump to [3]', mode = 'n' },
+      { '<leader>f4', desc = 'Jump to [4]', mode = 'n' },
     }
   end,
 }

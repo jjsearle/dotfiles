@@ -15,9 +15,9 @@ return {
 
     local wk = require 'which-key'
     wk.add {
-      { '<leader>t', desc = 'I18n [T]ranslation', mode = 'n' },
-      { '<leader>te', desc = '[E]dit translation', mode = 'n' },
-      { '<leader>tt', desc = '[T]oggle virtual text', mode = 'n' },
+      { '<leader>i', desc = '[I]18n Translation', mode = 'n' },
+      { '<leader>ie', desc = '[E]dit translation', mode = 'n' },
+      { '<leader>ti', desc = '[T]oggle [I]18n virtual text', mode = 'n' },
     }
   end,
 }

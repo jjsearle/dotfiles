@@ -24,13 +24,6 @@ return { -- Collection of various small independent plugins/modules
     -- - <M-l> - Move right
     require('mini.move').setup()
 
-    -- Code commenting
-    --
-    -- - gc - Toggle comment
-    -- - gcc - Toggle comment for current line
-    -- - gc[count] - Toggle comment for [count] lines
-    require('mini.comment').setup()
-
     -- Autopairs
     require('mini.pairs').setup()
 
