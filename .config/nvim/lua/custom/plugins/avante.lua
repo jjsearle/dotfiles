@@ -6,8 +6,10 @@ return {
   opts = {
     --joe settings
     provider = 'openai',
-    openai = {
-      model = 'gpt-4o-mini',
+    providers = {
+      openai = {
+        model = 'gpt-4o-mini',
+      },
     },
     -- add any opts here
   },
@@ -30,11 +32,6 @@ return {
       'HakonHarnes/img-clip.nvim',
       event = 'VeryLazy',
       opts = {
-        -- joe settings
-        provider = 'openai',
-        openai = {
-          model = 'gpt-4o-mini',
-        },
         -- recommended settings
         default = {
           embed_image_as_base64 = false,
